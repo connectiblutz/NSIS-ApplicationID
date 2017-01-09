@@ -13,6 +13,11 @@
  *  contrib: <jmathies@mozilla.com>
  */
 
+/*
+ * Additional Connectify contributions:
+ *  Fixed Unicode support
+ */
+
 #define INITGUID
 
 #include <windows.h>
@@ -53,7 +58,11 @@ extern "C" void __declspec(dllexport) Set(HWND hwndParent, int string_size, TCHA
     TCHAR szDualMode[MAX_PATH];
     bool success = false;
 	HRESULT hr;
+#if !defined(UNICODE)
 	std::ostringstream hrStr;
+#else
+	std::wostringstream hrStr;
+#endif
 
     ZeroMemory(wszPath, sizeof(wszPath));
     ZeroMemory(wszAppID, sizeof(wszAppID));
@@ -67,7 +76,7 @@ extern "C" void __declspec(dllexport) Set(HWND hwndParent, int string_size, TCHA
 #if !defined(UNICODE)
     MultiByteToWideChar(CP_ACP, 0, szPath, -1, wszPath, MAX_PATH);
     MultiByteToWideChar(CP_ACP, 0, szAppID, -1, wszAppID, MAX_PATH);
-    if (dualMode && stricmp(szDualMode, "true") != 0) {
+    if (dualMode && _stricmp(szDualMode, "true") != 0) {
       dualMode = false;
     }
 #else

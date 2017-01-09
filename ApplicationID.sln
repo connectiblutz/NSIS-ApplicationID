@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApplicationID", "ApplicationID.vcxproj", "{EBB19D89-C251-4281-BC02-04559F609530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugUnicode|x86 = DebugUnicode|x86
+		Release|x86 = Release|x86
+		ReleaseUnicode|x86 = ReleaseUnicode|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBB19D89-C251-4281-BC02-04559F609530}.Debug|x86.ActiveCfg = Debug|Win32
+		{EBB19D89-C251-4281-BC02-04559F609530}.Debug|x86.Build.0 = Debug|Win32
+		{EBB19D89-C251-4281-BC02-04559F609530}.DebugUnicode|x86.ActiveCfg = DebugUnicode|Win32
+		{EBB19D89-C251-4281-BC02-04559F609530}.DebugUnicode|x86.Build.0 = DebugUnicode|Win32
+		{EBB19D89-C251-4281-BC02-04559F609530}.Release|x86.ActiveCfg = Release|Win32
+		{EBB19D89-C251-4281-BC02-04559F609530}.Release|x86.Build.0 = Release|Win32
+		{EBB19D89-C251-4281-BC02-04559F609530}.ReleaseUnicode|x86.ActiveCfg = ReleaseUnicode|Win32
+		{EBB19D89-C251-4281-BC02-04559F609530}.ReleaseUnicode|x86.Build.0 = ReleaseUnicode|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
